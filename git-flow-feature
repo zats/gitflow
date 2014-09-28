@@ -163,6 +163,7 @@ expand_nameprefix_arg_or_current() {
 		require_branch "$PREFIX$NAME"
 	else
 		use_current_feature_branch_name
+		warn "Automatically chosen current feature $NAME"
 	fi
 }
 
