@@ -123,6 +123,8 @@ cmd_help() {
 }
 
 require_name_arg() {
+	expand_nameprefix_arg_or_current
+	
 	if [ "$NAME" = "" ]; then
 		warn "Missing argument <name>"
 		usage
